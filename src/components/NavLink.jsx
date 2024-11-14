@@ -11,7 +11,7 @@ const pathName = usePathname();
 console.log(pathName);
 
   return (
-    <Link className='' href={link.URL}>{link.title}</Link>
+    <Link className={`rounded p-1 ${pathName === link.URL && "bg-black text-white"}`} href={link.URL}>{link.title}</Link>
   )
 }
 
